@@ -1,6 +1,6 @@
 # Universal API PHP Example
 
-Universal API is a versatile tool that enables signing documents internally, within your system, and collecting signatures from 3rd parties outside your system, using a wide variety of eID tools ([eIDs supported in the Dokobit portal by countries](https://support.dokobit.com/article/709-supported-countries-eids)).
+Universal API is a versatile tool that enables signing documents internally, within your system, and collecting signatures from 3rd parties outside your system, using a wide variety of eID tools ([eIDs supported in the Dokobit portal by countries](https://dokobitbysignicat.zendesk.com/hc/en-us/articles/19571107560988-List-of-countries-and-eIDs-supported-in-the-Dokobit-portal)).
 
 Signing takes place in the account-less Dokobit signing interface. With your organization’s branding setup, the transition from your system to the signing page is made seamless and straightforward. Document signing invitations to 3rd parties also adapt to the styling you set.
 
@@ -27,7 +27,7 @@ Universal API offers two options how your document can be shared with participan
 - External signers can be added to internal signing.
 
 ### Sign
-Once signing is created, users will be able to sign the document. You can use [test data](https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data) for signing.
+Once signing is created, users will be able to sign the document. You can use [test data](https://dokobitbysignicat.zendesk.com/hc/en-us/articles/20067528968476-Mobile-ID-and-Smart-ID-test-data) for signing.
 
 ### Retrieving signed document
 Document signing postback calls are triggered, if `postback_url` was set while creating a signing.
@@ -37,7 +37,7 @@ There are eight types of postback calls:
 3. `signer_signed` - Document signed by one of the signers;
 4. `document_received` - Document delivery was confirmed by the receiver;
 5. `signing_completed` - Document signed by all parties;
-More details can be found [here](https://support.dokobit.com/article/820-dokobit-webhooks).
+More details can be found [here](https://dokobitbysignicat.zendesk.com/hc/en-us/articles/20066725677724-Dokobit-Webhooks).
 
 [`postback-handler.php`](https://github.com/dokobit/universal-api-php-example/blob/main/public/postback-handler.php) - PHP code example for handling postback calls. The file should be placed in the public web directory, accessible for Universal API.
 
